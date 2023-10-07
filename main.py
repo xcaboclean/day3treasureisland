@@ -33,12 +33,19 @@ if answer == "left":
   answer = input("swim or wait?")
   if answer == "wait":
      answer = input("Which door? Red,Blue or Yellow?")
+     if answer == "Yellow":
+        print("You Win!")
+     elif answer == "Red":
+        print("Burned by fire.")
+        print("Game Over")
+     elif answer == "Blue":      
+       print("Eaten by beasts.") 
+       print("Game Over")
+     else:
+       print("Game Over") 
   else:
-    if answer == "Yellow":
-      print("You Win!")
-    elif answer == "Red":
-      print("Burned by fire.")
-      print("Game Over")
-    else:      
-      print("Fall into a hole.")
-      print("Game Over")
+    print("Attacked by trout.")
+    print("Game Over")  
+else:
+  print("Fall into a hole.")
+  print("Game Over")
